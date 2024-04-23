@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp');
+var myApp = angular.module('myApp', []);
 //aca incluyo 2 servicios mas aparte del scope
 myApp.controller('mainController', function($scope,$filter,$log) {
     $scope.name ="Andréss";
@@ -8,7 +8,7 @@ myApp.controller('mainController', function($scope,$filter,$log) {
 
     $scope.getname = function(){
         $log.info($scope.name,$scope.formattedName);
-    }
+    } 
     console.log($scope);
     $scope.getname();
 });
